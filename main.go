@@ -10,7 +10,7 @@ import (
 func main() {
 	r := echo.New()
 	r.Renderer = templates.LoadTemplates("views/*.html")
-	r.Use(middleware.Static("static"))
+	r.Use(middleware.Static("assets"))
 	r.Use(middleware.Logger())
 	r.Use(middleware.Recover())
 
