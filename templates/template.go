@@ -13,8 +13,14 @@ type Template struct {
 }
 
 // LoadTemplates load all templates
-func LoadTemplates(files string) *Template {
-	return &Template{templates: template.Must(template.ParseGlob(files))}
+func LoadTemplates() *Template {
+	return &Template{templates: template.Must(template.ParseFiles(
+		"templates/layout/header.html",
+		"templates/layout/navigation.html",
+		"templates/layout/footer.html",
+
+		"templates/loto/index.html",
+	))}
 }
 
 // Render for templates

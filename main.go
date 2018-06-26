@@ -9,7 +9,7 @@ import (
 
 func main() {
 	r := echo.New()
-	r.Renderer = templates.LoadTemplates("views/*.html")
+	r.Renderer = templates.LoadTemplates()
 	r.Use(middleware.Static("assets"))
 	r.Use(middleware.Logger())
 	r.Use(middleware.Recover())
