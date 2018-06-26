@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/h00s/lotoweb/loto"
+	"github.com/h00s/lotoweb/app/controllers"
 	"github.com/h00s/lotoweb/templates"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
@@ -14,7 +14,7 @@ func main() {
 	r.Use(middleware.Logger())
 	r.Use(middleware.Recover())
 
-	lc := loto.NewController()
+	lc := controllers.NewLotoController()
 	r.GET("/", lc.Index)
 
 	r.Logger.Fatal(r.Start("localhost:1323"))
