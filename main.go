@@ -2,14 +2,14 @@ package main
 
 import (
 	"github.com/h00s/lotoweb/app/controllers"
-	"github.com/h00s/lotoweb/templates"
+	"github.com/h00s/lotoweb/app/views"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
 
 func main() {
 	r := echo.New()
-	r.Renderer = templates.LoadTemplates()
+	r.Renderer = views.LoadViews()
 	r.Use(middleware.Static("assets"))
 	r.Use(middleware.Logger())
 	r.Use(middleware.Recover())
