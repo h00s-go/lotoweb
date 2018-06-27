@@ -18,5 +18,5 @@ func NewLotoController() *LotoController {
 
 // Index is first page
 func (lc *LotoController) Index(c echo.Context) error {
-	return c.Render(http.StatusOK, "loto-index", template.HTML("<p>HTML Test</p>"))
+	return c.Render(http.StatusOK, "loto/index", template.HTML("<p>HTML Test</p>"))
 }
