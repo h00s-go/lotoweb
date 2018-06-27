@@ -1,0 +1,9 @@
+{
+  "views": [
+		"app/views/layout/header.html",
+		"app/views/layout/navigation.html",
+		"app/views/layout/footer.html",
+
+    "app/views/loto/index.html"
+  ]
+}

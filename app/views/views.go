@@ -13,14 +13,8 @@ type View struct {
 }
 
 // LoadViews load all templates
-func LoadViews() *View {
-	return &View{views: template.Must(template.ParseFiles(
-		"app/views/layout/header.html",
-		"app/views/layout/navigation.html",
-		"app/views/layout/footer.html",
-
-		"app/views/loto/index.html",
-	))}
+func LoadViews(files []string) *View {
+	return &View{views: template.Must(template.ParseFiles(files...))}
 }
 
 // Render for templates
