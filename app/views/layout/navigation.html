@@ -1,50 +1,31 @@
 {{define "layout/navigation"}}
 
-<nav class="col-md-2 d-none d-md-block sidebar">
-  <div class="sidebar-sticky">
-    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-      <span>Main</span>
-    </h6>
-
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
-          <span data-feather="home"></span>
-          Dashboard <span class="sr-only">(current)</span>
+<!-- Side Nav START -->
+<div class="side-nav expand-lg">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="side-nav-header">
+        <span>Loto</span>
+      </li>
+      <li class="nav-item dropdown open">
+        <a class="dropdown-toggle" href="javascript:void(0);">
+          <span class="icon-holder">
+            <i class="mdi mdi-pokeball"></i>
+          </span>
+          <span class="title">7 od 39</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="file"></span>
-          Orders
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="shopping-cart"></span>
-          Products
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="users"></span>
-          Customers
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="bar-chart-2"></span>
-          Reports
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="layers"></span>
-          Integrations
+      <li class="nav-item dropdown">
+        <a class="dropdown-toggle" href="javascript:void(0);">
+          <span class="icon-holder">
+            <i class="mdi mdi-pokeball"></i>
+          </span>
+          <span class="title">6 od 45</span>
         </a>
       </li>
     </ul>
   </div>
-</nav>
+</div>
+<!-- Side Nav END -->
 
 {{end}}

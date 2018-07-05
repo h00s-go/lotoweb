@@ -1,33 +1,95 @@
 {{define "layout/header"}}
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+<!DOCTYPE html>
+<html>
 
-    <title>Dashboard Template for Bootstrap</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Applicator - Admin Dashboard Template</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
-  </head>
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
+<body>
+  <div class="app header-info">
+    <div class="layout">
+      <!-- Header START -->
+      <div class="header navbar">
+        <div class="header-container">
+          <div class="nav-logo">
+            <a href="index.html">
+              <div class="logo logo-white" style="background-image: url('img/logo.png')"></div>
+            </a>
+          </div>
+          <ul class="nav-left">
+            <li>
+              <a class="sidenav-fold-toggler" href="javascript:void(0);">
+                <i class="mdi mdi-menu"></i>
+              </a>
+              <a class="sidenav-expand-toggler" href="javascript:void(0);">
+                <i class="mdi mdi-menu"></i>
+              </a>
+            </li>
+            <li class="search-box">
+              <a class="search-toggle" href="javascript:void(0);">
+                <i class="search-icon mdi mdi-magnify"></i>
+                <i class="search-icon-close mdi mdi-close-circle-outline"></i>
+              </a>
+            </li>
+            <li class="search-input">
+              <input class="form-control" type="text" placeholder="Type to search...">
+              <div class="search-predict">
+                <div class="search-footer">
+                  <span>You are Searching for '
+                    <b class="text-dark">
+                      <span class="serach-text-bind"></span>
+                    </b>'
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <li class="user-profile dropdown dropdown-animated scale-left">
+              <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">
+                <img class="profile-img img-fluid" src="img/avatar.png" alt="">
+              </a>
+              <ul class="dropdown-menu dropdown-md p-v-0">
+                <li>
+                  <ul class="list-media">
+                    <li class="list-item p-15">
+                      <div class="media-img">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="info">
+                        <span class="title text-semibold">Krunoslav Husak</span>
+                        <span class="sub-title">Developer</span>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="index.html">
+                    <i class="ti-power-off p-r-10"></i>
+                    <span>Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Header END -->
 
-    <div class="container-fluid">
-      <div class="row">
-    {{template "layout/navigation"}}
+      {{template "layout/navigation"}}
+
+      <!-- Page Container START -->
+      <div class="page-container">
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+          <div class="container-fluid">
 
 {{end}}
