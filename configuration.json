@@ -4,6 +4,8 @@
 		"app/views/layout/navigation.html",
 		"app/views/layout/footer.html",
 
-    "app/views/loto/index.html"
+    "app/views/loto/index.html",
+    "app/views/loto/6od45.html",
+    "app/views/loto/7od39.html"
   ]
 }

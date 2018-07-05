@@ -23,6 +23,8 @@ func main() {
 	r.Use(middleware.Recover())
 
 	lc := controllers.NewLotoController()
+	r.GET("/6od45", lc.Loto6od45)
+	r.GET("/7od39", lc.Loto7od39)
 	r.GET("/", lc.Index)
 
 	r.Logger.Fatal(r.Start("localhost:1323"))
