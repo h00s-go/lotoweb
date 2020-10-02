@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/h00s/lotoweb/app/models"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 // LotoController for Loto methods
