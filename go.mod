@@ -3,9 +3,8 @@ module github.com/h00s/lotoweb
 go 1.15
 
 require (
-	github.com/labstack/echo/v4 v4.1.17
-	github.com/stretchr/testify v1.6.1 // indirect
-	golang.org/x/crypto v0.0.0-20201002094018-c90954cbb977 // indirect
-	golang.org/x/net v0.0.0-20200930145003-4acb6c075d10 // indirect
-	golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f // indirect
+	github.com/labstack/echo/v4 v4.10.0
+	github.com/mattn/go-isatty v0.0.17 // indirect
+	golang.org/x/crypto v0.4.0 // indirect
+	golang.org/x/time v0.3.0 // indirect
 )
