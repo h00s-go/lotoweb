@@ -1,6 +1,6 @@
 FROM golang:1.19-alpine AS build
 
-WORKDIR /src
+WORKDIR /app
 
 COPY . ./
 
@@ -13,7 +13,7 @@ WORKDIR /app
 
 COPY --from=build /out/lotoweb /app
 
-COPY --from=build /src/assets /app/assets
+COPY --from=build /app /app
 
 EXPOSE 8080
 
