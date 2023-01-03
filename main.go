@@ -27,5 +27,5 @@ func main() {
 	r.GET("/7od39", lc.Loto7od39)
 	r.GET("/", lc.Index)
 
-	r.Logger.Fatal(r.Start("0.0.0.0:8080"))
+	r.Logger.Fatal(r.Start(":8080"))
 }
